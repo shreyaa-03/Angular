@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="row">
+        <input type="text" class="form-control" [(ngModel)]="filteredString" />
+    </div>
+    <div class="row">
+        <div class="col">
+            <div *ngFor = "let user of users |filter:filteredString" class="my_3">
+                <div>Name: {{user.name }}</div>
+                <div>ID: {{user.salary }}</div>
+            </div>
+        </div>
+    </div>
+</div>

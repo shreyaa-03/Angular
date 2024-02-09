@@ -1,0 +1,28 @@
+<div class="container" >
+    <h1>Student Data</h1>
+    <table border="2px ">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Gender</th>
+        </thead>
+
+        <tbody  >
+          <tr app-student  *ngFor="let student of receivedStudentData"   [studentInfo]="student" >
+
+
+
+
+              <!-- <td>{{student.id }}</td>
+              <td>{{student.name }}</td>
+              <td>{{student.email }}</td>
+              <td>{{student.gender }}</td> -->
+              <!-- <app-student [studentInfo]="student" ></app-student> -->
+
+
+            </tr>
+
+        </tbody>
+    </table>
+</div>

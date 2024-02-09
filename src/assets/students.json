@@ -1,0 +1,38 @@
+[
+  {
+    "id": "101",
+    "name": "shreya",
+    "email": "shreya@somaiya.edu",
+    "gender": "female"
+  },
+  {
+    "id": "102",
+    "name": "sheetal",
+    "email": "sheetal@somaiya.edu",
+    "gender": "female"
+  },
+  {
+    "id": "103",
+    "name": "nitin",
+    "email": "nitin@somaiya.edu",
+    "gender": "male"
+  },
+  {
+    "id": "104",
+    "name": "bhuvan",
+    "email": "bhuvan@somaiya.edu",
+    "gender": "male"
+  },
+  {
+    "id": "105",
+    "name": "surya",
+    "email": "surya@somaiya.edu",
+    "gender": "male"
+  },
+  {
+    "id": "106",
+    "name": "soham",
+    "email": "soham@somaiya.edu",
+    "gender": "male"
+  }
+]
