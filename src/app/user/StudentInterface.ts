@@ -1,6 +1,6 @@
-export interface Students {
-  id: string;
-  name: string;
-  email: string;
-  gender: string;
+export interface Student {
+  id?: Number;
+  name?: string;
+  email?: string;
+  gender?: string;
 }

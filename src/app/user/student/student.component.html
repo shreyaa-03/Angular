@@ -1,8 +1,25 @@
-
-<td>{{studentInfo.id }}</td>
-<td>{{studentInfo.name }}</td>
-<td>{{studentInfo.email }}</td>
-<td>{{studentInfo.gender }}</td>
-
-
-
+<!-- <div class="container">
+  <table class="table">
+    <thead>
+      <th>Student ID</th>
+      <th>Student Name</th>
+      <th>Student Email</th>
+      <th>Student Gender</th>
+      <th>Action</th>
+    </thead>
+    <tbody> -->
+<!-- <tr *ngFor="let stud of studentsinfo"> -->
+<!-- <tr> -->
+<td>{{ studentInfo.id }}</td>
+<td>{{ studentInfo.name }}</td>
+<td>{{ studentInfo.email }}</td>
+<td>{{ studentInfo.gender }}</td>
+<td>
+  <button>Edit</button>
+  <button (click)="deleteStudent(studentInfo.id)">Delete</button>
+  <!-- <button mat-button (click)="openDialog()">Open Dialog</button> -->
+</td>
+<!-- </tr> -->
+<!-- </tbody>
+  </table>
+</div> -->

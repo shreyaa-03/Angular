@@ -1,28 +1,49 @@
-<div class="container" >
-    <h1>Student Data</h1>
-    <table border="2px ">
-        <thead>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-            <th>Gender</th>
-        </thead>
 
-        <tbody  >
-          <tr app-student  *ngFor="let student of receivedStudentData"   [studentInfo]="student" >
+<div class="container extra-container">
+  <div class="row">
+    <div class="col">Add Student</div>
+  </div>
+  <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off" class="center-form">
+  <div class="row">
+    <div class="col2">Student ID</div>
+    <div class="col2"><input type="text" name="id" id="" class="form-control"   formControlName="id"></div>
+  </div>
+  <div class="row">
+    <div class="col2">Student Name</div>
+    <div class="col2"><input type="text" name="name" id="" class="form-control"   formControlName="name"></div>
+  </div>
+  <div class="row">
+    <div class="col2">Student Email</div>
+    <div class="col2"><input type="text" name="email" id="" class="form-control"   formControlName="email"></div>
+  </div>
+  <div class="row">
+    <div class="col2">Student Gender</div>
+    <div class="col2"><input type="text" name="gender" id="" class="form-control"   formControlName="gender"></div>
+  </div>
+  <div class="row">
 
+    <div class="col2"><input type="submit" name="submit" id="" class="btn" ></div>
+  </div>
+  </form>
+  </div>
+<div class="container">
+  <h1>Student Data</h1>
+  <table border="2px ">
+    <thead>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Gender</th>
+      <th>Action</th>
+    </thead>
 
-
-
-              <!-- <td>{{student.id }}</td>
-              <td>{{student.name }}</td>
-              <td>{{student.email }}</td>
-              <td>{{student.gender }}</td> -->
-              <!-- <app-student [studentInfo]="student" ></app-student> -->
-
-
-            </tr>
-
-        </tbody>
-    </table>
+    <tbody>
+      <!-- <tr app-student  *ngFor="let student of studentInfo"   [studentInfo]="student" > -->
+      <tr
+        app-student
+        *ngFor="let student of receivedStudentData"
+        [studentInfo]="student"
+      ></tr>
+    </tbody>
+  </table>
 </div>

@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+.extra-container {
+  width: 50%;
+}
+.extra-container div {
+  padding: 3px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

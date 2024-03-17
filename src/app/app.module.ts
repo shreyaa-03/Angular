@@ -1,24 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PoepleComponent } from './user/poeple/poeple.component';
-import { FilterPipeComponent } from './user/filter-pipe/filter-pipe.component';
-import { FormsModule } from '@angular/forms';
-import { FilterPipe } from './user/Pipes/filter.pipe';
+
+import {
+  FormsModule,
+  ReactiveFormsModule,
+  FormGroup,
+  FormBuilder,
+} from '@angular/forms';
+
 import { StudentComponent } from './user/student/student.component';
+import { AppComponent } from './app.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatDialogRef} from '@angular/material/dialog';
+
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
-  declarations: [
-    StudentComponent,
-    AppComponent,
-    PoepleComponent,
-    FilterPipeComponent,
-    FilterPipe,
+  declarations: [StudentComponent, PoepleComponent, AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
-  providers: [],
+  providers: [ provideAnimationsAsync()],
   bootstrap: [AppComponent, PoepleComponent],
 })
 export class AppModule {}
